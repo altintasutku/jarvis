@@ -1,3 +1,7 @@
+# Copyright (c) 2024 Utku Altıntaş
+# This software is released under the MIT License.
+# https://opensource.org/licenses/MIT
+
 import speech_recognition as sr
 import pyttsx3
 from ollama import Client
