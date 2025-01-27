@@ -11,25 +11,38 @@ An intelligent voice assistant that uses Ollama for processing queries and provi
 - Supports both English and Turkish languages
 
 ## Prerequisites
+
 - Docker installed on your system
 - Microphone access
 - Speaker access
-  
+
 ## Quick Start with Docker
+
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/altintasutku/jarvis
 cd jarvis
 ```
-2. Build the Docker image:
+
+2. Install dependencies:
+
 ```bash
-docker build -t ai-voice-assistant .
-```
-3. Run the container:
-```bash
-docker run --device /dev/snd:/dev/snd -v /dev/shm:/dev/shm --network host ai-voice-assistant
+pip install -r requirements.txt
 ```
 
+3. Install Ollama Models:
+
+```bash
+ollama pull llama3.2:1b # Pull llama3.2:1b model
+ollama pull deepseek-r1:8b # Pull deepseek-r1:8b model
+```
+
+4. Run the application:
+
+```bash
+python main.py
+```
 
 ## Configuration
 
@@ -52,7 +65,7 @@ Feel free to open issues and pull requests for any improvements.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. 
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
