@@ -1,0 +1,6 @@
+SpeechRecognition
+pyttsx3
+ollama
+gTTS
+playsound
+PyAudio 
